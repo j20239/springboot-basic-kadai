@@ -8,11 +8,12 @@
 
 <body>
 	<table border="1">
+		<h3>ToDoリスト</h3>
 		<tr>
 			<th>id</th>
-			<th>title</th>
-			<th>priority</th>
-			<th>status</th>
+			<th>タイトル</th>
+			<th>優先度</th>
+			<th>ステータス</th>
 		</tr>
 		<tr th:each="todo : ${todos}">
 			<td th:text="${todo.id}"></td>
